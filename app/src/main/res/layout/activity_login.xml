@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="com.getmate.getmate_final.Activities.LoginActivity">
+    <LinearLayout android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_marginTop="10dp"
+            android:id="@+id/email_al"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_width="match_parent"
+            android:layout_margin="10sp"
+            android:layout_height="wrap_content"
+            />
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:layout_margin="10dp"
+            android:id="@+id/password_al"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textColorHint="@color/lightgrey"
+            android:maxLines="1"
+            android:singleLine="true"
+            />
+    </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/login_al"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="LOGIN"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="OR"
+            android:layout_gravity="center_horizontal"
+            android:padding="1dp"/>
+        <Button
+            android:id="@+id/sign_in_al"
+            style="?android:textAppearanceSmall"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="SIGNUP"
+            android:textStyle="bold"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"/>
+        <android.support.design.internal.BaselineLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:outlineProvider="background"
+            >
+
+
+        </android.support.design.internal.BaselineLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textStyle="italic"
+            android:textSize="16dp"
+            android:textColor="@color/black"
+            android:text="signup if you don't have getmate account there is no way round"
+            android:lines="2"/>
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

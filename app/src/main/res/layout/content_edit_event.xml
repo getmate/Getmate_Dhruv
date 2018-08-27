@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.getmate.getmate_final.Activities.editEvent"
+    tools:showIn="@layout/activity_edit_event">
+
+    <LinearLayout
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/activities_button"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:text="Create Event"
+            android:background="@color/light_cool"
+            android:textColor="@color/blue"
+            android:textSize="20dp"
+            android:gravity="center"
+            android:layout_weight="2"
+            android:layout_height="match_parent"
+            />
+        <Button
+            android:id="@+id/done_ee"
+            android:layout_margin="3dp"
+            android:background="@color/bg_interest"
+            android:layout_width="0dp"
+            android:text="DONE"
+            android:gravity="center"
+            android:layout_weight="1"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/darkgrey"
+        android:layout_marginBottom="20dp"
+        />
+    <ScrollView
+        android:background="@drawable/profile_background"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="8"
+                android:text="Title:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/title_ee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+
+                android:layout_weight="2"
+                android:hint="Tour de Mahabalipuram"
+                android:inputType="text"
+                android:maxLines="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:layout_weight="8"
+
+                android:text="Venue:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/venue_ee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:hint="GANDHI MANDAPPAM"
+                android:inputType="text"
+                android:maxLines="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="0dp"
+
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:layout_weight="6"
+                android:text="Show venue on map"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+
+            <Button
+                android:id="@+id/show_on_map_ee"
+                android:layout_width="0dp"
+                android:layout_height="30dp"
+
+                android:layout_weight="1"
+                android:background="@mipmap/map"
+                android:padding="10dp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="pick Date"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/date_ee"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="113dp"
+
+                android:background="@drawable/calander" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="pick Time"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <Button
+                android:id="@+id/time_ee"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginLeft="110dp"
+
+                android:background="@drawable/clock" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Click to add Interest Tags"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_marginLeft="15dp"
+
+                />
+            <Button
+                android:id="@+id/interest_ee"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90dp"
+                />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_weight="8"
+                android:text="Link:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/link_ee"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_weight="2"
+                android:hint="if available "
+                android:inputType="text"
+                android:maxLines="2" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical"
+            android:weightSum="10">
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:gravity="left"
+                android:text="Description:"
+                android:textColor="@color/black"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/description_ee"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="10dp"
+                android:cursorVisible="true"
+                android:hint="here put full explaination regarding the event you created so that users may get clear idea of the extent "
+                android:inputType="text"
+                android:lines="10" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="set ur email visible for queries?" />
+
+            <RadioButton
+                android:id="@+id/email_rb_ee"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_weight="10"
+                android:text="yes"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="set ur contact number visible for queries?" />
+
+            <RadioButton
+                android:id="@+id/phone_rb_ee"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_weight="10"
+                android:text="yes"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="set ur facebook id visible for queries?" />
+
+            <RadioButton
+                android:id="@+id/fb_rb_ee"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_weight="10"
+                android:text="yes"
+                android:textSize="10dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginLeft="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="10"
+                android:text="set ur facebook id visible for queries?" />
+
+            <RadioButton
+                android:id="@+id/linkedin_rb_ee"
+                android:layout_width="80dp"
+                android:layout_height="30dp"
+                android:layout_weight="10"
+                android:text="yes"
+                android:textSize="10dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>
